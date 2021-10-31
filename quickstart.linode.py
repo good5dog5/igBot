@@ -26,14 +26,15 @@ session = InstaPy(username=insta_username,
                   multi_logs=True,
                   headless_browser=False)
 
-follow_list = None
-black_list = None
+follow_list = []
+black_list = []
 
 with open('username', 'r') as f:
     follow_list = f.read().splitlines()
 
 # with open('blacklist', 'r') as f:
 #     black_list = f.read().splitlines()
+
 
 print(f'orig follow_list size: {len(follow_list)}')
 print(f'black_list size: {len(black_list)}')
