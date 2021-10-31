@@ -32,8 +32,8 @@ black_list = None
 with open('username', 'r') as f:
     follow_list = f.read().splitlines()
 
-with open('blacklist', 'r') as f:
-    black_list = f.read().splitlines()
+# with open('blacklist', 'r') as f:
+#     black_list = f.read().splitlines()
 
 print(f'orig follow_list size: {len(follow_list)}')
 print(f'black_list size: {len(black_list)}')
